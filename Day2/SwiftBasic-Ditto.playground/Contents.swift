@@ -31,6 +31,7 @@ switch solvedDuration {
         print("Thats enough, you better go home!")
 }
 
+
 print("\n")
 
 
