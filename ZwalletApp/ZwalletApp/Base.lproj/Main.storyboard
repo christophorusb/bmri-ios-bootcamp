@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TDG-mg-xCN">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="ZwalletApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zwallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diQ-ss-gPL">
+                                <rect key="frame" x="143" y="208" width="107" height="31.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" name="ZwalletPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="PrimaryBG"/>
+                        <constraints>
+                            <constraint firstItem="diQ-ss-gPL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="78A-cx-b6g"/>
+                            <constraint firstItem="diQ-ss-gPL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="Be8-Ou-fhL"/>
+                            <constraint firstItem="diQ-ss-gPL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Da2-6f-fmI"/>
+                            <constraint firstItem="diQ-ss-gPL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="aTy-gy-XEn"/>
+                            <constraint firstItem="diQ-ss-gPL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="wzY-38-ANf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4ov-MY-CIv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.44274809160299" y="-2.1126760563380285"/>
+        </scene>
+        <!--Verification View Controller-->
+        <scene sceneID="kkB-Cz-7fY">
+            <objects>
+                <viewController storyboardIdentifier="OTPVerificationViewController" id="QAj-lH-L4H" customClass="OTPVerificationViewController" customModule="ZwalletApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mx8-Ga-vMY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyT-E5-d1C">
+                                <rect key="frame" x="0.0" y="266" width="393" height="586"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKu-U4-z2j">
+                                        <rect key="frame" x="0.0" y="23" width="393" height="128"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GNs-zA-ff9">
+                                        <rect key="frame" x="20" y="159" width="353" height="110"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sT-LY-zu3">
+                                        <rect key="frame" x="25" y="427" width="343" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="ZwalletPrimary"/>
+                                        <color key="tintColor" name="PrimaryBG"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Confirm"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="GNs-zA-ff9" firstAttribute="leading" secondItem="JyT-E5-d1C" secondAttribute="leading" constant="20" id="0VT-NV-poc"/>
+                                    <constraint firstAttribute="trailing" secondItem="GNs-zA-ff9" secondAttribute="trailing" constant="20" id="6h7-4q-0dH"/>
+                                    <constraint firstItem="HKu-U4-z2j" firstAttribute="leading" secondItem="JyT-E5-d1C" secondAttribute="leading" id="70W-ft-vkK"/>
+                                    <constraint firstAttribute="bottom" secondItem="GNs-zA-ff9" secondAttribute="bottom" constant="317" id="DWr-jg-hf4"/>
+                                    <constraint firstAttribute="bottom" secondItem="HKu-U4-z2j" secondAttribute="bottom" constant="435" id="UKe-H0-kAl"/>
+                                    <constraint firstItem="HKu-U4-z2j" firstAttribute="top" secondItem="JyT-E5-d1C" secondAttribute="top" constant="23" id="fRZ-9n-Bkf"/>
+                                    <constraint firstItem="GNs-zA-ff9" firstAttribute="top" secondItem="HKu-U4-z2j" secondAttribute="bottom" constant="8" symbolic="YES" id="g1H-PY-87m"/>
+                                    <constraint firstItem="GNs-zA-ff9" firstAttribute="leading" secondItem="JyT-E5-d1C" secondAttribute="leading" constant="20" id="kP8-c8-1Hx"/>
+                                    <constraint firstAttribute="trailing" secondItem="HKu-U4-z2j" secondAttribute="trailing" id="twi-0h-Rv8"/>
+                                    <constraint firstAttribute="trailing" secondItem="GNs-zA-ff9" secondAttribute="trailing" constant="20" id="v2J-zy-9z0"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zwallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFJ-Nx-cJl">
+                                <rect key="frame" x="143" y="169" width="107" height="31.333333333333343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" name="ZwalletPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qAc-Ek-PvS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JyT-E5-d1C" firstAttribute="trailing" secondItem="qAc-Ek-PvS" secondAttribute="trailing" id="1IK-Ow-7YV"/>
+                            <constraint firstItem="JyT-E5-d1C" firstAttribute="top" secondItem="mx8-Ga-vMY" secondAttribute="top" constant="266" id="3fc-wG-mrS"/>
+                            <constraint firstItem="JyT-E5-d1C" firstAttribute="leading" secondItem="qAc-Ek-PvS" secondAttribute="leading" id="5C3-0Y-Z6f"/>
+                            <constraint firstAttribute="bottom" secondItem="JyT-E5-d1C" secondAttribute="bottom" id="qzj-A4-5YZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HeadersContainer" destination="HKu-U4-z2j" id="q9o-9r-B94"/>
+                        <outlet property="OTPFieldsHorizontalStackContainer" destination="GNs-zA-ff9" id="z87-RR-uWk"/>
+                        <outlet property="confirmButton" destination="9sT-LY-zu3" id="pI1-Ff-NIG"/>
+                        <outlet property="roundedCard" destination="JyT-E5-d1C" id="TBn-Cy-5nd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPn-Cs-Zos" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823.6641221374045" y="400"/>
+        </scene>
+        <!--Success View Controller-->
+        <scene sceneID="ngA-S1-nU7">
+            <objects>
+                <viewController storyboardIdentifier="OTPSuccessViewController" id="oFU-nF-lEt" customClass="OTPSuccessViewController" customModule="ZwalletApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hRF-hW-ggr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zwallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag2-hT-EQG">
+                                <rect key="frame" x="143" y="172" width="107" height="31.333333333333343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" name="ZwalletPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEY-Oi-zmj">
+                                <rect key="frame" x="-3" y="308" width="396" height="544"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzj-xL-oie">
+                                        <rect key="frame" x="20" y="156" width="356" height="190"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-green" translatesAutoresizingMaskIntoConstraints="NO" id="EfG-tZ-8H1">
+                                        <rect key="frame" x="128" y="8" width="140" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="Cyi-mt-ccc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrO-Qi-Toq">
+                                        <rect key="frame" x="20" y="388" width="356" height="57"/>
+                                        <color key="backgroundColor" name="ZwalletPrimary"/>
+                                        <color key="tintColor" name="PrimaryBG"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login Now"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hrO-Qi-Toq" secondAttribute="trailing" constant="20" id="2uE-xa-aFr"/>
+                                    <constraint firstItem="EfG-tZ-8H1" firstAttribute="top" secondItem="cEY-Oi-zmj" secondAttribute="topMargin" id="FRY-kw-FD0"/>
+                                    <constraint firstItem="hrO-Qi-Toq" firstAttribute="top" secondItem="lzj-xL-oie" secondAttribute="bottom" constant="42" id="IrM-aI-Ngf"/>
+                                    <constraint firstItem="hrO-Qi-Toq" firstAttribute="leading" secondItem="cEY-Oi-zmj" secondAttribute="leading" constant="20" id="KQR-fE-zo7"/>
+                                    <constraint firstItem="EfG-tZ-8H1" firstAttribute="leading" secondItem="cEY-Oi-zmj" secondAttribute="leading" constant="128" id="ZRg-oW-IyX"/>
+                                    <constraint firstAttribute="trailing" secondItem="lzj-xL-oie" secondAttribute="trailing" constant="20" id="cr4-5E-aHb"/>
+                                    <constraint firstAttribute="bottom" secondItem="hrO-Qi-Toq" secondAttribute="bottom" constant="99" id="gQf-wZ-p6D"/>
+                                    <constraint firstAttribute="bottom" secondItem="lzj-xL-oie" secondAttribute="bottom" constant="198" id="l1c-Bt-Nhl"/>
+                                    <constraint firstItem="lzj-xL-oie" firstAttribute="top" secondItem="cEY-Oi-zmj" secondAttribute="top" constant="156" id="sz5-8e-6lv"/>
+                                    <constraint firstItem="lzj-xL-oie" firstAttribute="top" secondItem="EfG-tZ-8H1" secondAttribute="bottom" constant="58" id="uZm-wM-6gX"/>
+                                    <constraint firstItem="lzj-xL-oie" firstAttribute="leading" secondItem="cEY-Oi-zmj" secondAttribute="leading" constant="20" id="vb0-aO-sE6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rMW-5x-fQW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cEY-Oi-zmj" firstAttribute="top" secondItem="hRF-hW-ggr" secondAttribute="top" constant="308" id="0oA-LO-aM0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cEY-Oi-zmj" secondAttribute="trailing" constant="-16" id="Plo-4L-ddL"/>
+                            <constraint firstAttribute="bottom" secondItem="cEY-Oi-zmj" secondAttribute="bottom" id="iOO-Ej-JsF"/>
+                            <constraint firstItem="cEY-Oi-zmj" firstAttribute="leading" secondItem="hRF-hW-ggr" secondAttribute="leadingMargin" constant="-19" id="q1C-5z-Ogf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="OTPSuccessMessageWrapper" destination="lzj-xL-oie" id="c63-Ak-Cwm"/>
+                        <outlet property="loginNowButton" destination="hrO-Qi-Toq" id="Abd-0v-Ceo"/>
+                        <outlet property="roundedCard" destination="cEY-Oi-zmj" id="ORL-nw-8a8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nJ-x2-E6m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2616.030534351145" y="400"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="sNJ-pr-gkp">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPasswordViewController" id="9MY-lu-uVA" customClass="ForgotPasswordViewController" customModule="ZwalletApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gxx-bo-ew6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Iiv-X7-KXe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4T-FB-GZn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1824" y="-947"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="FXl-th-Dae">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="aj2-i2-chb" customClass="SignUpViewController" customModule="ZwalletApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YfF-qu-h4K">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Liz-lO-KhW">
+                                <rect key="frame" x="0.0" y="172" width="393" height="680"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="FiV-B7-gQt">
+                                        <rect key="frame" x="20" y="161" width="353" height="263"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zeo-x2-h16">
+                                        <rect key="frame" x="20" y="484" width="353" height="57"/>
+                                        <color key="backgroundColor" name="ZwalletPrimary"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="TMZ-3A-9xy"/>
+                                        </constraints>
+                                        <color key="tintColor" name="PrimaryBG"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ncg-vt-0Ph">
+                                        <rect key="frame" x="25" y="549" width="343" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZJ-a2-wj0">
+                                        <rect key="frame" x="-8" y="21" width="393" height="111"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Zeo-x2-h16" secondAttribute="bottom" constant="139" id="6BY-pM-YNN"/>
+                                    <constraint firstAttribute="trailing" secondItem="kZJ-a2-wj0" secondAttribute="trailing" constant="8" id="JFW-eF-VDb"/>
+                                    <constraint firstItem="kZJ-a2-wj0" firstAttribute="centerX" secondItem="Zeo-x2-h16" secondAttribute="centerX" constant="-8" id="Kpb-Hf-2Et"/>
+                                    <constraint firstItem="FiV-B7-gQt" firstAttribute="leading" secondItem="Zeo-x2-h16" secondAttribute="leading" id="PT1-28-2ze"/>
+                                    <constraint firstItem="FiV-B7-gQt" firstAttribute="top" secondItem="kZJ-a2-wj0" secondAttribute="bottom" constant="29" id="ThH-Dc-pel"/>
+                                    <constraint firstItem="FiV-B7-gQt" firstAttribute="trailing" secondItem="Zeo-x2-h16" secondAttribute="trailing" id="XYq-2r-fqc"/>
+                                    <constraint firstAttribute="bottom" secondItem="kZJ-a2-wj0" secondAttribute="bottom" constant="548" id="hqY-2z-dPw"/>
+                                    <constraint firstItem="Zeo-x2-h16" firstAttribute="leading" secondItem="Liz-lO-KhW" secondAttribute="leading" constant="20" id="jKc-wZ-EaA"/>
+                                    <constraint firstItem="kZJ-a2-wj0" firstAttribute="top" secondItem="Liz-lO-KhW" secondAttribute="topMargin" constant="13" id="lkd-Bb-8Lk"/>
+                                    <constraint firstItem="Zeo-x2-h16" firstAttribute="top" secondItem="FiV-B7-gQt" secondAttribute="bottom" constant="60" id="sbl-Bx-7JI"/>
+                                    <constraint firstItem="kZJ-a2-wj0" firstAttribute="leading" secondItem="Liz-lO-KhW" secondAttribute="leading" constant="-8" id="v7B-p4-LCd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zwallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yT6-zp-gVs">
+                                <rect key="frame" x="143" y="110" width="107" height="31.333333333333343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" name="ZwalletPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6s5-bW-veC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Liz-lO-KhW" firstAttribute="leading" secondItem="YfF-qu-h4K" secondAttribute="leading" id="3HM-f2-y4V"/>
+                            <constraint firstAttribute="trailing" secondItem="Liz-lO-KhW" secondAttribute="trailing" id="MuG-L2-jw1"/>
+                            <constraint firstItem="Liz-lO-KhW" firstAttribute="top" secondItem="6s5-bW-veC" secondAttribute="top" constant="113" id="YW6-lU-XQ4"/>
+                            <constraint firstAttribute="bottom" secondItem="Liz-lO-KhW" secondAttribute="bottom" id="ZLk-CB-0ZA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HeadersContainer" destination="kZJ-a2-wj0" id="1Nq-Ww-LbC"/>
+                        <outlet property="SignUpFormContainer" destination="FiV-B7-gQt" id="oKp-w7-w6B"/>
+                        <outlet property="roundedCard" destination="Liz-lO-KhW" id="CTU-F4-1uy"/>
+                        <outlet property="signUpButton" destination="Zeo-x2-h16" id="mHx-wu-HIH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4I-jw-Ba5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823.6641221374045" y="-283.0985915492958"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nit-yA-aK0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TDG-mg-xCN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sDc-Vw-Tr1">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3jp-8k-9gG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhh-SL-XMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="check-green" width="800" height="800"/>
+        <namedColor name="PrimaryBG">
+            <color red="0.98039215686274506" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ZwalletPrimary">
+            <color red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
